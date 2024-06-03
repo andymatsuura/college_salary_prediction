@@ -21,7 +21,7 @@
 * The second model was compiled with Random Forest with one output layer and the same features of model 1<br>
 
 * Top Feature Importances:<br>
-![Top Feature Importances]
+![Top Feature Importances](https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Images/Top%20Feature%20Importances%20Random%20Forest.PNG)<br>
 
 * Model Predictions With One Output Layer:<br>
 ![Random Forest](https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Model%202%20Random%20Forest.PNG)<br>
