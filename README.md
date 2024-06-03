@@ -38,7 +38,8 @@ https://collegescorecard.ed.gov/assets/CollegeScorecardDataDictionary.xlsx
 ## Model 1: <br>
 * This first model was done looking at these features, with the target as the calculated field "ROI" which considered salary and debt. 
 
-* Features
+* Features 
+
 ![Model 1 Features](Images/image-2.png)
 
 The target was ROI, which was calculated like this.
