@@ -13,17 +13,17 @@
 * This first model
 
 * Model Architecture With One Output Layer:
-  (https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Model%20architecture%20Unit%201%20Output%20ROI%20label.PNG)<br>
+  ![Model Architecture](images/https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Model%20architecture%20Unit%201%20Output%20ROI%20label.PNG)<br>
   
 * Model Predictions With One Output Layer:
-  (https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Plot%20Predictions%201%20Unit%20Ouput%20tf%20keras%20model%20label%20ROI.PNG) <br>
+  ![Predictions with One Output Layer](images/https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Plot%20Predictions%201%20Unit%20Ouput%20tf%20keras%20model%20label%20ROI.PNG) <br>
 
 ## Model 2: <br>
 * The second model
 
 
 
-(https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Model%202%20Random%20Forest.PNG)<br>
+![Random Forest](images/https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Model%202%20Random%20Forest.PNG)<br>
 
 
 ## Model 3: <br>
