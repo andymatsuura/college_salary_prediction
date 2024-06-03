@@ -1,23 +1,42 @@
 # Project Scope</br>
-* Project diving into whether a college education is worth the expense of attending by Andrew Matsura and Holly Miesbauer </br>
+## Is College Worth the Cost? </br>
 
 ## Overview </br>
-* There have been multiple studies completed demonstrating that indeed one's lifetime earnings for the college educated exceed that of non college educated individuals <br>
-* Overall, a college education is worth it in terms of a return on investment over one's lifetime in terms of earnings, however, what exactly determines the worth of a college education?<br>
-* To that end, we created several deep learning models to look at what features were important in determining a successful ROI for college attendance such as (but not inclusive):<br>
-  * Is the institution Public or private
-  * What are the mean earnings six years post graduation
-  * Did the student take on student loans? And if so, how much?<br>
+* The college experience is a rite of passage for nearly all high school students, with social and parental pressure to "make something of yourself". There have been multiple studies completed demonstrating that indeed one's lifetime earnings for the college educated exceed that of non college educated individuals. But what exactly determines the worth of a college degree?
+* The value proposition of college has historically been unquestioned. However, recently, with rising tuition rates, increasing student debt, and greater saturation of degree holders in the job market (Champlain), it is less clear whether the value in a college degree is worth it. The main considerations would be whether the salary potential is worth the cost of tuition for a degree and the debt repayment required. 
+* We created several deep learning models to look at the important features in determining a successful return on investment for college attendance, for example:
+  * Public/private control
+  * Mean earnings 6 and 10 years post graduation
+  * Debt amount and loan repayment
+  * College admittance and expenditure per student
+
+## Tools Used
+  * TensorFlow
+  * Pandas
+  * MatPlotLib
+  * Numpy
+  * SKLearn
+  * Linear Regression
+  * Random Forest Regressor
+
+## Data Sources
+https://www.kaggle.com/datasets/kaggle/college-scorecard
+* Data used in this analysis was found from this source. More recent data can be found on the college scorecard US Department of Education website, linked here. The size of the file used is prohibitive for sharing on github, but can be found here.
+https://collegescorecard.ed.gov/data/
+* The college scorecard data dictionary excel file was used to determine what the columns in the dataset actually mean, and assisted in determining which columns to use in the analysis. 
+https://collegescorecard.ed.gov/assets/CollegeScorecardDataDictionary.xlsx
    
 ## Model 1: <br>
+* This first model was done looking at these features, with the target as the calculated field "ROI" which considered salary and debt. 
 
-* Model Architecture With One Output Layer:<br>
-  ![Model Architecture](https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Model%20architecture%20Unit%201%20Output%20ROI%20label.PNG)<br>
-  
-* Model Predictions With One Output Layer:<br>
-  ![Predictions with One Output Layer](https://github.com/andymatsuura/college_salary_prediction/raw/main/Images/Plot%20Predictions%201%20Unit%20Ouput%20tf%20keras%20model%20label%20ROI.PNG)
- <br>
+* Features
+![Model 1 Features](image-2.png)
+* Architecture: 
+![alt text](image-4.png)
+* Predictions With One Output Layer:
+![alt text](image-3.png)
 
+* The model performed very poorly, with a high loss and 0% accuracy. 
 ## Model 2: <br>
 * The second model was compiled with Random Forest with one output layer and the same features of model 1<br>
 
@@ -26,13 +45,15 @@
 <br>
 
 * Model Predictions With One Output Layer:<br>
-![Random Forest](https://github.com/andymatsuura/college_salary_prediction/raw/main/Images/Model%202%20Random%20Forest.PNG)
+![alt text](image-5.png)
 <br>
 
 * Model evaluation: <br>
   * Mean Absolute Error: 68202.69008352426
   * Mean Squared Error: 9290541773.416914
   * Root Mean Squared Error: 96387.45651492685 <br>
+
+* While the values of predicted vs actual ROI were fairly linear, the 
 
 ## Model 3: <br>
 * In this model, to correct for loss leakage drop out rates were added and a second output layer added to improve accuracy:
@@ -52,7 +73,7 @@
 
 ## Model 4 Final Model: <br>
 
-  
+
 
 
 
