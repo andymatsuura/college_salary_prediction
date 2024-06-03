@@ -1,43 +1,41 @@
-# college_salary_predictor
+# Project Scope</br>
+* Project diving into whether a college education is worth the expense of attending by Andrew Matsura and Holly Miesbauer </br>
 
-## Is College Worth It?
+## Overview </br>
+*There have been multiple studies completed demonstrating that indeed one's lifetime earnings for the college educated exceed that of non college educated individuals. 
+*Overall, a college education is worth it in terms of a return on investment over one's lifetime in terms of earnings, however, what exactly determines the worth of a college education?
+*To that end, we created several deep learning models to look at what features were important in determining a successful ROI for college attendance such as:<br>
+  * Public or private
+  * Mean earnings six years post graduation
+  * Did the student take on student loans? And if so, how much?<br>
+    
+## Model 1: <br>
+* This first model
 
-The college experience is a rite of passage for nearly all high school students, with social and parental pressure to "make something of yourself". The value proposition of college has historically been unquestioned. However, recently, with rising tuition rates, increasing student debt, and greater saturation of degree holders in the job market (Champlain), it is less clear whether the value in a college degree is worth it. The main considerations would be whether the salary potential is worth the cost of tuition for a degree. 
+* Model Architecture With One Output Layer:
+  ![Model Architecture](images/https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Model%20architecture%20Unit%201%20Output%20ROI%20label.PNG)<br>
+  
+* Model Predictions With One Output Layer:
+  ![Predictions with One Output Layer](images/https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Plot%20Predictions%201%20Unit%20Ouput%20tf%20keras%20model%20label%20ROI.PNG) <br>
 
-## Tools Used
-
-* TensorFlow
-* Pandas
-* MatPlotLib
-* Numpy
-* SKLearn
-* Linear Regression
-* Random Forest Regressor
-
-## Analysis Overview
-
-In this analysis, we use the college scorecard dataset to see if we can predict the salary potential of college graduates. The dataset started with 125,000 rows and 1800 columns, with data on colleges from the years of 1996 to 2013. The data included information on high school performance, college admission rate, tuition costs, college expenditures per student, debt and income post graduation, repayment success post graduation, grant information, and many other things! For greater efficiency, the columns used for modeling in this analysis were reduced to a smaller subset. 
-
-## Data Finding and Cleaning Process
-
-https://www.kaggle.com/datasets/kaggle/college-scorecard
-
-Data used in this analysis was found from this source. More recent data can be found on the college scorecard US Department of Education website, linked here.
-
-https://collegescorecard.ed.gov/data/
-
-The college scorecard data dictionary pdf was used to determine what the columns in the dataset actually means, and assisted in 
-
-## Model 1
-
-![alt text](image-1.png)
-
-The selected columns included the institution name, number of branches, highest degree offered, public or private status, admissions rate, average SAT, student population, if the college is currently open, tuiton (in and out of state), institution expenditure per student, faculty salary, completion rate, default rate, debt median, students in the cumulative debt cohort, students with reported family income, students who have applied for financial aid, median date the student enters repayment, family income, age of entry, and the mean earnings 6 years post graduation
+## Model 2: <br>
+* The second model
 
 
 
+![Random Forest](images/https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Model%202%20Random%20Forest.PNG)<br>
 
 
+## Model 3: <br>
+* In this model, to correct for loss leakage drop out rates were added:
+    256/256 [==============================] - 1s 3ms/step
+    256/256 - 1s - loss: -1.2439e+10 - accuracy: 0.9422 - 952ms/epoch - 4ms/step
+    Loss: -12438753280.0, Accuracy: 0.9422417879104614
+
+
+## Model 4 Final Model: <br>
+
+  
 
 
 
@@ -45,3 +43,23 @@ The selected columns included the institution name, number of branches, highest 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Works Cited </br>
+* [Knox magazine]((https://www.knox.edu/magazine/spring-2018/features/yes-college-is-worth-it))
+
+# Data and Research Sources </br>
+* Dataset for this project was dowloaded [here]((https://www.kaggle.com/datasets/kaggle/college-scorecard?resource=download&select=Scorecard.csv))
