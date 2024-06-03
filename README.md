@@ -10,26 +10,20 @@
   * Did the student take on student loans? And if so, how much?<br>
    
 ## Model 1: <br>
-* This first model
 
-* Model Architecture With One Output Layer:
+* Model Architecture With One Output Layer:<br>
   ![Model Architecture](https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Model%20architecture%20Unit%201%20Output%20ROI%20label.PNG)<br>
   
-* Model Predictions With One Output Layer:
+* Model Predictions With One Output Layer:<br>
   ![Predictions with One Output Layer](https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Plot%20Predictions%201%20Unit%20Ouput%20tf%20keras%20model%20label%20ROI.PNG) <br>
 
-## Model 1a: increase output layer to two units, add a drop out rate: <br>
-
-
-
-
 ## Model 2: <br>
-* The second model was compiled with Random Forest with one output layer and the same features of model 1
+* The second model was compiled with Random Forest with one output layer and the same features of model 1<br>
 
-* Top Feature Importances:
+* Top Feature Importances:<br>
 ![Top Feature Importances]
 
-* Model Predictions With One Output Layer:
+* Model Predictions With One Output Layer:<br>
 ![Random Forest](https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Model%202%20Random%20Forest.PNG)<br>
 
 * Model evaluation: <br>
@@ -39,9 +33,7 @@
 
 ## Model 3: <br>
 * In this model, to correct for loss leakage drop out rates were added and a second output layer added to improve accuracy:
-![Model Evaluation]
-
-
+![Model Plot](https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Images/Model%203%20increase%20output%20layer%20add%20dropout%20rates.PNG)
 
 * Model Evaluation: <br>
  * 256/256 - 0s - loss: -2.0165e+03 - accuracy: 0.9422 - 347ms/epoch - 1ms/step
@@ -49,7 +41,8 @@
  * Mean Absolute Error: 130.5268270320259
  * Mean Squared Error: 369534.07959854195
  * R-squared: -405.8856610447764
-
+![Model Evaluation](https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Images/Model%203%20Evaluation%20Metrics.PNG)
+  
 
 ## Model 4 Final Model: <br>
 
