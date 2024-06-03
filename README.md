@@ -30,9 +30,9 @@
 <br>
 
 * Model evaluation: <br>
-  *Mean Absolute Error: 68202.69008352426
-  *Mean Squared Error: 9290541773.416914
-  *Root Mean Squared Error: 96387.45651492685 <br>
+  * Mean Absolute Error: 68202.69008352426
+  * Mean Squared Error: 9290541773.416914
+  * Root Mean Squared Error: 96387.45651492685 <br>
 
 ## Model 3: <br>
 * In this model, to correct for loss leakage drop out rates were added and a second output layer added to improve accuracy:
