@@ -25,27 +25,33 @@ https://www.kaggle.com/datasets/kaggle/college-scorecard
 https://collegescorecard.ed.gov/data/
 * The college scorecard data dictionary excel file was used to determine what the columns in the dataset actually mean, and assisted in determining which columns to use in the analysis. 
 https://collegescorecard.ed.gov/assets/CollegeScorecardDataDictionary.xlsx
+
+## Cleaning Process
+
+* Data was very messy initially, and needed to be cleaned to be workable. 
+* First, there were many columns whose values were suppressed for privacy, and which needed to be replaced with a blank value. 
+* Null values were dropped in the target column for the most original values, and other null values in numerical columns were replaced with the column mean. 
    
 ## Model 1: <br>
 * This first model was done looking at these features, with the target as the calculated field "ROI" which considered salary and debt. 
 
 * Features
-![Model 1 Features](image-2.png)
+![Model 1 Features](Images/image-2.png)
+The target was ROI, which was calculated like this.
+![alt text](Images/image-6.png)
 * Architecture: 
-![alt text](image-4.png)
+![alt text](Images/image-4.png)
 * Predictions With One Output Layer:
-![alt text](image-3.png)
+![alt text](Images/image-3.png)
 
-* The model performed very poorly, with a high loss and 0% accuracy. 
-## Model 2: <br>
-* The second model was compiled with Random Forest with one output layer and the same features of model 1<br>
+* The model performed very suspiciously, with values of 94.15% for each training epoch and negative loss.
 
 * Top Feature Importances:<br>
 ![Top Feature Importances](https://github.com/andymatsuura/college_salary_prediction/raw/main/Images/Images/Top%20Feature%20Importances%20Random%20Forest.PNG)
 <br>
 
 * Model Predictions With One Output Layer:<br>
-![alt text](image-5.png)
+![alt text](Images/image-5.png)
 <br>
 
 * Model evaluation: <br>
@@ -53,9 +59,9 @@ https://collegescorecard.ed.gov/assets/CollegeScorecardDataDictionary.xlsx
   * Mean Squared Error: 9290541773.416914
   * Root Mean Squared Error: 96387.45651492685 <br>
 
-* While the values of predicted vs actual ROI were fairly linear, the 
+* While the values of predicted vs actual ROI were fairly linear, there was an extreme amount of error within the evaluation
 
-## Model 3: <br>
+## Model 2: <br>
 * In this model, to correct for loss leakage drop out rates were added and a second output layer added to improve accuracy:
 ![Model Plot](https://github.com/andymatsuura/college_salary_prediction/raw/main/Images/Images/Model%203%20increase%20output%20layer%20add%20dropout%20rates.PNG)<br>
 
@@ -68,34 +74,79 @@ https://collegescorecard.ed.gov/assets/CollegeScorecardDataDictionary.xlsx
  * Mean Absolute Error: 130.5268270320259
  * Mean Squared Error: 369534.07959854195
  * R-squared: -405.8856610447764
-![Model Evaluation](https://github.com/andymatsuura/college_salary_prediction/blob/main/Images/Images/Model%203%20Evaluation%20Metrics.PNG)
-  
 
-## Model 4 Final Model: <br>
+* This model was more accurate, but still had a lot of error, and a negative loss. This indicates a lot of error within this models predictive ability, despite a high accuracy. A different approach will be used to further optimize the model.
 
+## Model 3: <br>
 
+* Different columns were selected in this model, with the target set based on the mean earnings of the students 6 years post graduation. 
+* When converting to numerical values using the pandas function "get_dummies", several columns were adding a lot of uncertainty and "noise" into the model, and thus were dropped. These referred to institution name, zip code and city. 
 
+![alt text](Images/image-8.png)
 
+* The column "relative success" was created based on the threshold of $30,000 income per year, 6 years after completion. The model target was determined by whether or not this threshold was met, and if meeting this threshold can be predicted. 
 
+![alt text](Images/image-9.png)
 
+* This was the architecture used for this model, and the amount of parameters have diminished significantly, with cells running in a matter of seconds, not minutes.
 
+![alt text](Images/image-10.png)
 
+* Accuracy on test data was fairly good, with 80% accuracy
 
+![alt text](Images/image-11.png)
 
+* With a random forest regressor, the mean squared error and r squared value were determined from the dataset, to check for error. These values were very low. 
 
+![alt text](Images/image-12.png)
 
+* The feature importances were also looked at, with the offering of a graduate degree, application for financial aid and median debt being the most improtant factors.
 
+![alt text](Images/image-13.png)
 
+* With greater feature reduction, it is interesting to see which features are the most important, and if they would remain as important with a slightly modified target.
 
+## Model 4
 
+* The final model looked at earnings 10 years after college, along with remaining debt. We believe that with by the 10 year point, with a good salary and a small amount of remaining debt, the value of the college can be better identified. This is how the target column was set up.
 
+![alt text](Images/image-14.png)
+
+* The model architecture for the fourth model was identical to the third. 
+
+![alt text](Images/image-15.png)
+
+* The models performance was very good! 
+
+![alt text](Images/image-16.png)
+
+When taking debt into consideration, the model found the students who applied for financial aid, those with reported family income, and those with cumulative debt to be the most important features. 
+
+![alt text](Images/image-17.png)
+
+Including these features increased the models performance significantly, and with a small error and loss, performed satisfactorily for our purposes.
+
+## Additional Visualizations
+
+### Comparing Top Earning Schools to Median Debt
+
+![alt text](Images/image-18.png)
+
+### Comparing Lowest Earning Schools to Median Debt
+
+![alt text](Images/image-19.png)
 
 # Conclusion: <br>
-* Modeling is an iterative process
+* College is expensive, and earnings are generally lower than one would expect
+* A graduate degree is worth more than a bachelors degree
+* Further analysis would be interesting to classify earnings by major, and future career
 * Changing items such as the features our models were using, most notably adding drop out rates, and increasing training time all contributed to small improvements in the models
+* Finding columns that were slowing down model performance helped significantly in future optimization, as each cell took seconds, not minutes
+* It would be interesting to see similar data on students without higher education to make more definitive claims, but your future success can be predicted fairly accurately by the college you attend. 
 
 # Works Cited </br>
 * [Knox magazine](https://www.knox.edu/magazine/spring-2018/features/yes-college-is-worth-it))<br>
 
-# Data and Research Sources </br>
-* Dataset for this project was downloaded [here](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?select=ratings.csv)<br>
+https://online.champlain.edu/blog/is-college-worth-the-cost
+
+
