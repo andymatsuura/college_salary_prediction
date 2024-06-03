@@ -22,8 +22,11 @@
 ## Data Sources
 https://www.kaggle.com/datasets/kaggle/college-scorecard
 * Data used in this analysis was found from this source. More recent data can be found on the college scorecard US Department of Education website, linked here. The size of the file used is prohibitive for sharing on github, but can be found here.
+
 https://collegescorecard.ed.gov/data/
+
 * The college scorecard data dictionary excel file was used to determine what the columns in the dataset actually mean, and assisted in determining which columns to use in the analysis. 
+
 https://collegescorecard.ed.gov/assets/CollegeScorecardDataDictionary.xlsx
 
 ## Cleaning Process
@@ -37,11 +40,17 @@ https://collegescorecard.ed.gov/assets/CollegeScorecardDataDictionary.xlsx
 
 * Features
 ![Model 1 Features](Images/image-2.png)
+
 The target was ROI, which was calculated like this.
+
 ![alt text](Images/image-6.png)
+
 * Architecture: 
+
 ![alt text](Images/image-4.png)
+
 * Predictions With One Output Layer:
+
 ![alt text](Images/image-3.png)
 
 * The model performed very suspiciously, with values of 94.15% for each training epoch and negative loss.
