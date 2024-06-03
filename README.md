@@ -2,8 +2,8 @@
 * Project diving into whether a college education is worth the expense of attending by Andrew Matsura and Holly Miesbauer </br>
 
 ## Overview </br>
-*There have been multiple studies completed demonstrating that indeed one's lifetime earnings for the college educated exceed that of non college educated individuals. 
-*Overall, a college education is worth it in terms of a return on investment over one's lifetime in terms of earnings, however, what exactly determines the worth of a college education?
+*There have been multiple studies completed demonstrating that indeed one's lifetime earnings for the college educated exceed that of non college educated individuals <br>
+*Overall, a college education is worth it in terms of a return on investment over one's lifetime in terms of earnings, however, what exactly determines the worth of a college education?<br>
 *To that end, we created several deep learning models to look at what features were important in determining a successful ROI for college attendance such as (but not inclusive):<br>
   * Public or private
   * Mean earnings six years post graduation
