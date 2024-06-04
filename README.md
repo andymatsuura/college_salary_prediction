@@ -121,7 +121,7 @@ When taking debt into consideration, the model found the students who applied fo
 
 Including these features increased the models performance significantly, and with a small error and loss, performed satisfactorily for our purposes.
 
-## Additional Visualizations
+## High/Low Earnings
 
 ### Comparing Top Earning Schools to Median Debt
 
