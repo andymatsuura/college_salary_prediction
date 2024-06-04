@@ -53,7 +53,7 @@ The target was ROI, which was calculated like this.
 
 ![alt text](Images/Images/Model1Train.PNG)<br>
 
-* The model performed very suspiciously, with values of 94.15% for each training epoch and negative loss.
+* The model performed very poorly, with values of 0% accuracy for each training epoch and very high loss.
 
 * Top Feature Importances:<br>
 ![alt text](Images/Images/topfeatureimportance.PNG)
