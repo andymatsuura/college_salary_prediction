@@ -51,16 +51,16 @@ The target was ROI, which was calculated like this.
 
 * Predictions With One Output Layer:
 
-![alt text](Images/image-3.png)
+![alt text](Images/Model1Train.png)
 
 * The model performed very suspiciously, with values of 94.15% for each training epoch and negative loss.
 
 * Top Feature Importances:<br>
-![Top Feature Importances](https://github.com/andymatsuura/college_salary_prediction/raw/main/Images/Images/Top%20Feature%20Importances%20Random%20Forest.PNG)
+![alt text](Images/Top Feature Importances Random Forest.png)
 <br>
 
 * Model Predictions With One Output Layer:<br>
-![alt text](Images/image-5.png)
+![alt text](Images/Model1RandomForestPlot.png)
 <br>
 
 * Model evaluation: <br>
