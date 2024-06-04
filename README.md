@@ -85,10 +85,8 @@ The target was ROI
 ## Model 3: <br>
 
 * Different columns were selected in this model, with the target set based on the mean earnings of the students 6 years post graduation. 
-* When converting to numerical values using the pandas function "get_dummies", several columns were adding a lot of uncertainty and "noise" into the model, and thus were dropped. These referred to institution name, zip code and city. 
-
-![alt text](Images/image-8.png)
-
+* When converting to numerical values using the pandas function "get_dummies", several columns were adding a lot of uncertainty and "noise" into the model, and thus were dropped. These referred to institution name, zip code and city.
+ 
 * The column "relative success" was created based on the threshold of $30,000 income per year, 6 years after completion. The model target was determined by whether or not this threshold was met, and if meeting this threshold can be predicted. 
 
 ![alt text](Images/image-9.png)
