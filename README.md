@@ -72,7 +72,7 @@ The target was ROI, which was calculated like this.
 
 ## Model 2: <br>
 * In this model, to correct for loss leakage drop out rates were added and a second output layer added to improve accuracy:
-![Model Plot](https://github.com/andymatsuura/college_salary_prediction/raw/main/Images/Images/Model%203%20increase%20output%20layer%20add%20dropout%20rates.PNG)<br>
+![alt text](Images/Images/model3tfkerasdropoutrate.PNG)<br>
 
 * Model Evaluation: <br>
  * 256/256 - 0s - loss: -2.0165e+03
