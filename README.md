@@ -1,8 +1,7 @@
-# Project Scope</br>
-## Is College Worth the Cost? </br>
+# Is College Worth the Cost? </br>
 
 ## Overview </br>
-* The college experience is a rite of passage for nearly all high school students, with social and parental pressure to "make something of yourself". There have been multiple studies completed demonstrating that indeed one's lifetime earnings for the college educated exceed that of non college educated individuals. But what exactly determines the worth of a college degree?
+* The college experience is a rite of passage for nearly all high school students, with social and parental pressure to "make something of yourself". There have been multiple studies completed demonstrating that indeed one's lifetime earnings for the college educated exceed that of non college educated individuals. However, with a job market saturated with college graduates, recent studies have shown that college graduates are largely underemployed (IHE). This means they often take and remain in jobs that don't require a degree. So what exactly determines the worth of a college degree?
 * The value proposition of college has historically been unquestioned. However, recently, with rising tuition rates, increasing student debt, and greater saturation of degree holders in the job market (Champlain), it is less clear whether the value in a college degree is worth it. The main considerations would be whether the salary potential is worth the cost of tuition for a degree and the debt repayment required. 
 * We created several deep learning models to look at the important features in determining a successful return on investment for college attendance, for example:
   * Public/private control
@@ -50,18 +49,18 @@ The target was ROI, which was calculated like this.
 
 ![alt text](Images/image-4.png)
 
-* Predictions With One Output Layer:
+* Predictions With One Output Layer:<br>
 
-![alt text](Images/image-3.png)
+![alt text](Images/Images/Model1Train.PNG)<br>
 
-* The model performed very suspiciously, with values of 94.15% for each training epoch and negative loss.
+* The model performed very poorly, with values of 0% accuracy for each training epoch and very high loss.
 
 * Top Feature Importances:<br>
-![Top Feature Importances](https://github.com/andymatsuura/college_salary_prediction/raw/main/Images/Images/Top%20Feature%20Importances%20Random%20Forest.PNG)
+![alt text](Images/Images/topfeatureimportance.PNG)
 <br>
 
 * Model Predictions With One Output Layer:<br>
-![alt text](Images/image-5.png)
+![alt text](Images/Images/Model1RandomForestPlot.PNG)
 <br>
 
 * Model evaluation: <br>
@@ -73,7 +72,7 @@ The target was ROI, which was calculated like this.
 
 ## Model 2: <br>
 * In this model, to correct for loss leakage drop out rates were added and a second output layer added to improve accuracy:
-![Model Plot](https://github.com/andymatsuura/college_salary_prediction/raw/main/Images/Images/Model%203%20increase%20output%20layer%20add%20dropout%20rates.PNG)<br>
+![alt text](Images/Images/model3tfkerasdropoutrate.PNG)<br>
 
 * Model Evaluation: <br>
  * 256/256 - 0s - loss: -2.0165e+03
@@ -152,11 +151,12 @@ Including these features increased the models performance significantly, and wit
 * Further analysis would be interesting to classify earnings by major, and future career
 * Changing items such as the features our models were using, most notably adding drop out rates, and increasing training time all contributed to small improvements in the models
 * Finding columns that were slowing down model performance helped significantly in future optimization, as each cell took seconds, not minutes
-* It would be interesting to see similar data on students without higher education to make more definitive claims, but your future success can be predicted fairly accurately by the college you attend. 
+* It would be interesting to see similar data on students without higher education to make more definitive claims, but your future success can be predicted fairly accurately by the college you attend.
+* Going forward, it would be interesting to look into job requirements for post college earnings.
 
 # Works Cited </br>
 * [Knox magazine](https://www.knox.edu/magazine/spring-2018/features/yes-college-is-worth-it))<br>
 
 https://online.champlain.edu/blog/is-college-worth-the-cost
 
-
+https://www.insidehighered.com/news/students/academics/2024/02/22/more-half-recent-four-year-college-grads-underemployed 
