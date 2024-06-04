@@ -49,9 +49,9 @@ The target was ROI, which was calculated like this.
 
 ![alt text](Images/image-4.png)
 
-* Predictions With One Output Layer:
+* Predictions With One Output Layer:<br>
 
-![alt text](Images/Images/Model1Train.png)
+![alt text](Images/Images/Model1Train.PNG)<br>
 
 * The model performed very suspiciously, with values of 94.15% for each training epoch and negative loss.
 
@@ -60,7 +60,7 @@ The target was ROI, which was calculated like this.
 <br>
 
 * Model Predictions With One Output Layer:<br>
-![alt text](Images/Images/Model1RandomForestPlot.png)
+![alt text](Images/Images/Model1RandomForestPlot.PNG)
 <br>
 
 * Model evaluation: <br>
