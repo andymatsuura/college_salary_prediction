@@ -51,16 +51,16 @@ The target was ROI, which was calculated like this.
 
 * Predictions With One Output Layer:
 
-![alt text](Images/Model1Train.png)
+![alt text](Images/Images/Model1Train.png)
 
 * The model performed very suspiciously, with values of 94.15% for each training epoch and negative loss.
 
 * Top Feature Importances:<br>
-![alt text](Images/Top Feature Importances Random Forest.png)
+![alt text](Images/Images/Top Feature Importances Random Forest.png)
 <br>
 
 * Model Predictions With One Output Layer:<br>
-![alt text](Images/Model1RandomForestPlot.png)
+![alt text](Images/Images/Model1RandomForestPlot.png)
 <br>
 
 * Model evaluation: <br>
