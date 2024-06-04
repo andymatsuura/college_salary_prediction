@@ -56,7 +56,7 @@ The target was ROI, which was calculated like this.
 * The model performed very suspiciously, with values of 94.15% for each training epoch and negative loss.
 
 * Top Feature Importances:<br>
-![alt text](Images/Images/Top Feature Importances Random Forest.png)
+![alt text](Images/Images/topfeatureimportance.PNG)
 <br>
 
 * Model Predictions With One Output Layer:<br>
