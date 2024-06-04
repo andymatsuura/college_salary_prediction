@@ -1,8 +1,7 @@
-# Project Scope</br>
-## Is College Worth the Cost? </br>
+# Is College Worth the Cost? </br>
 
 ## Overview </br>
-* The college experience is a rite of passage for nearly all high school students, with social and parental pressure to "make something of yourself". There have been multiple studies completed demonstrating that indeed one's lifetime earnings for the college educated exceed that of non college educated individuals. But what exactly determines the worth of a college degree?
+* The college experience is a rite of passage for nearly all high school students, with social and parental pressure to "make something of yourself". There have been multiple studies completed demonstrating that indeed one's lifetime earnings for the college educated exceed that of non college educated individuals. However, with a job market saturated with college graduates, recent studies have shown that college graduates are largely underemployed (IHE). This means they often take and remain in jobs that don't require a degree. So what exactly determines the worth of a college degree?
 * The value proposition of college has historically been unquestioned. However, recently, with rising tuition rates, increasing student debt, and greater saturation of degree holders in the job market (Champlain), it is less clear whether the value in a college degree is worth it. The main considerations would be whether the salary potential is worth the cost of tuition for a degree and the debt repayment required. 
 * We created several deep learning models to look at the important features in determining a successful return on investment for college attendance, for example:
   * Public/private control
@@ -152,7 +151,8 @@ Including these features increased the models performance significantly, and wit
 * Further analysis would be interesting to classify earnings by major, and future career
 * Changing items such as the features our models were using, most notably adding drop out rates, and increasing training time all contributed to small improvements in the models
 * Finding columns that were slowing down model performance helped significantly in future optimization, as each cell took seconds, not minutes
-* It would be interesting to see similar data on students without higher education to make more definitive claims, but your future success can be predicted fairly accurately by the college you attend. 
+* It would be interesting to see similar data on students without higher education to make more definitive claims, but your future success can be predicted fairly accurately by the college you attend.
+* Going forward, it would be interesting to look into job requirements for post college earnings.
 
 # Works Cited </br>
 * [Knox magazine](https://www.knox.edu/magazine/spring-2018/features/yes-college-is-worth-it))<br>
