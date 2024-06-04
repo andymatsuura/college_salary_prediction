@@ -37,11 +37,7 @@ https://collegescorecard.ed.gov/assets/CollegeScorecardDataDictionary.xlsx
 ## Model 1: <br>
 * This first model was done looking at these features, with the target as the calculated field "ROI" which considered salary and debt. 
 
-* Features 
-
-![Model 1 Features](Images/image-2.png)
-
-The target was ROI, which was calculated like this.
+The target was ROI
 
 ![alt text](Images/image-6.png)
 
@@ -64,9 +60,9 @@ The target was ROI, which was calculated like this.
 <br>
 
 * Model evaluation: <br>
-  * Mean Absolute Error: 68202.69008352426
-  * Mean Squared Error: 9290541773.416914
-  * Root Mean Squared Error: 96387.45651492685 <br>
+  * Mean Absolute Error: 68200
+  * Mean Squared Error: 9290000000
+  * Root Mean Squared Error: 96000 <br>
 
 * While the values of predicted vs actual ROI were fairly linear, there was an extreme amount of error within the evaluation
 
@@ -76,13 +72,13 @@ The target was ROI, which was calculated like this.
 
 * Model Evaluation: <br>
  * 256/256 - 0s - loss: -2.0165e+03
- * - accuracy: 0.9422
+ * - accuracy: 0.94
  * - 347ms/epoch - 1ms/step
- * Loss: -2016.5423583984375
- * Accuracy: 0.9422417879104614 <br>
- * Mean Absolute Error: 130.5268270320259
- * Mean Squared Error: 369534.07959854195
- * R-squared: -405.8856610447764
+ * Loss: -2016
+ * Accuracy: 0.94 <br>
+ * Mean Absolute Error: 130
+ * Mean Squared Error: 369534
+ * R-squared: -406
 
 * This model was more accurate, but still had a lot of error, and a negative loss. This indicates a lot of error within this models predictive ability, despite a high accuracy. A different approach will be used to further optimize the model.
 
@@ -97,10 +93,6 @@ The target was ROI, which was calculated like this.
 
 ![alt text](Images/image-9.png)
 
-* This was the architecture used for this model, and the amount of parameters have diminished significantly, with cells running in a matter of seconds, not minutes.
-
-![alt text](Images/image-10.png)
-
 * Accuracy on test data was fairly good, with 80% accuracy
 
 ![alt text](Images/image-11.png)
@@ -109,7 +101,7 @@ The target was ROI, which was calculated like this.
 
 ![alt text](Images/image-12.png)
 
-* The feature importances were also looked at, with the offering of a graduate degree, application for financial aid and median debt being the most improtant factors.
+* The feature importances were also looked at, with the offering of a graduate degree, application for financial aid (APPL_SCH_N) and median debt being the most improtant factors.
 
 ![alt text](Images/image-13.png)
 
@@ -121,15 +113,11 @@ The target was ROI, which was calculated like this.
 
 ![alt text](Images/image-14.png)
 
-* The model architecture for the fourth model was identical to the third. 
-
-![alt text](Images/image-15.png)
-
 * The models performance was very good! 
 
 ![alt text](Images/image-16.png)
 
-When taking debt into consideration, the model found the students who applied for financial aid, those with reported family income, and those with cumulative debt to be the most important features. 
+When taking debt into consideration, the model found the students who applied for financial aid (APPL_SCH_N), those with reported family income, and those with cumulative debt to be the most important features. 
 
 ![alt text](Images/image-17.png)
 
